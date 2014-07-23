@@ -1,0 +1,47 @@
+.clearfix:before,.clearfix:after{
+	display:table;
+	content: "";
+}
+.clearfix:after{
+	clear: both;
+}
+.cabecera .container{
+	width:1170px;
+	margin:0 auto;
+	padding: 0 15px;
+}
+.cabecera .logo{
+	float:left;
+	width:230px;
+	padding:10px 0;
+}
+a{
+	color: #505961;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+a:hover{
+	color: #2fb677;
+}
+.cabecera .menu{
+	float: right;
+}
+.cabecera .menu ul{
+	list-style:none;
+	position: relative;
+	margin:0;
+	padding:0;
+}
+.cabecera .menu ul li{
+	float: left;
+}
+.cabecera .menu ul li a{
+	padding:0 15px;
+	display:block;
+	line-height:84px;
+}
+.cabecera .menu ul li a:hover,.cabecera .menu ul li.active a{
+	color: #fff;
+	box-shadow: 0 84px 0 #2fb677 inset;
+}
