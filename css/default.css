@@ -1,11 +1,11 @@
-.clearfix:before,.clearfix:after{
+.clearfix:before,.clearfix:after,.container:before,.container:after{
 	display:table;
 	content: "";
 }
-.clearfix:after{
+.clearfix:after,.container:after{
 	clear: both;
 }
-.cabecera .container{
+.container{
 	width:1170px;
 	margin:0 auto;
 	padding: 0 15px;
@@ -44,4 +44,82 @@ a:hover{
 .cabecera .menu ul li a:hover,.cabecera .menu ul li.active a{
 	color: #fff;
 	box-shadow: 0 84px 0 #2fb677 inset;
+}
+/* TITULOS */
+.titulos-wrap{
+	text-align:center;padding:20px 15px 40px;
+}
+.titulos-wrap .titulo{
+	margin:0;
+	padding:.2em 0;
+	font-size:2em;
+	text-transform:uppercase;
+	color:#2fb677;
+}
+.titulos-wrap .subtitulo{
+	margin:0;
+	padding:0;
+	color:#7d8781;
+}
+/* SERVICIOS */
+.servicios{
+	padding:30px 0;
+}
+.servicios .item{
+	width:380px;
+	padding:15px 15px;
+	float:left;
+	text-align:center;	
+}
+.servicios .item .icon{
+	margin:0 auto;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	border:1px solid #2fb677;	
+}
+.servicios .item .icon span{
+	line-height:100px;
+	text-align:center;	
+	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	-ms-transition:all .3s;
+	-o-transition:all .3s;
+	transition:all .3s
+}
+.servicios .item header h3{
+	margin:0;
+	padding:10px 0 5px;
+}
+.servicios .item header p{
+	margin:0;
+}
+.servicios .item:hover .icon span,.servicios .item:hover header h3 a{
+	color:#2fb677;
+}
+
+/* POSTS */
+.posts-wrap{
+	padding:30px 0;
+	background:#fafafa url("../img/bg3.png");
+	box-shadow:0 1px 3px rgba(0,0,0,0.08) inset,0 -1px 3px rgba(0,0,0,0.08) inset;
+}
+.posts-wrap .post{
+	width:285px;
+	margin:0;
+	padding:15px 15px 20px;
+	float:left;
+}
+.posts-wrap .post img{
+	height:174px
+}
+.posts-wrap .post figcaption h3{
+	margin:0;
+	padding:10px 0 5px;
+}
+.posts-wrap .post .date{
+	margin:0
+}
+.posts-wrap .post .date .fa{
+	margin-right: 7px;
 }

@@ -3,9 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>Mi Primera pagina web en html5 y css3</title>
+	<link rel="shorcut icon" href="/mywebsite/img/favicon.png">
 	<link rel="stylesheet" href="/mywebsite/css/normalize.css">
 	<link rel="stylesheet" href="/mywebsite/css/default.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/mywebsite/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="/mywebsite/css/animate.css">
+	<link rel="stylesheet" href="/mywebsite/css/responsiveslides.css">
+	<script src="/mywebsite/js/responsiveslides.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#slider-home").responsiveSlides({	
+				speed:800,		
+				nav: true,
+				namespace: 'slid-btns',
+				titleAnimation: 'bounceIn'
+			});
+		});
+	</script>
 </head>
 <body>
 <header class="cabecera">
@@ -23,5 +40,105 @@
 		</nav>
 	</div>
 </header>
+<div class="slider">
+    <ul class="rslides" id="slider-home">
+      <li>
+        <img src="img/11.jpg" alt="">
+        <div class="caption">
+          <h3 class="wow">This is a caption</h3>
+          <p class="wow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quisquam pariatur maxime odio eaque! Quod delectus natus corrupti atque officiis.</p>
+        </div>
+      </li>
+      <li>
+        <img src="img/12.jpg" alt="">
+        <div class="caption">
+          <h3 class="wow">This is a caption</h3>
+          <p class="wow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, accusamus, ut, quam aut dolore impedit animi et voluptate id sunt !</p>
+        </div>
+      </li>
+      <li>
+        <img src="img/13.jpg" alt="">
+        <div class="caption">
+          <h3 class="wow">This is a caption</h3>
+          <p class="wow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, vel, earum, recusandae, consequuntur est molestias officiis?</p>
+        </div>
+      </li>
+    </ul>
+</div>
+<section class="servicios">
+	<hgroup class="titulos-wrap">
+		<h2 class="titulo wow bounceIn" data-wow-delay="0.3s">Servicios</h2>
+		<h4 class="subtitulo wow bounceIn" data-wow-delay="0.6s">Lorem ipsum dolor sit amet</h4>
+	</hgroup>
+	<div class="container">
+		<article class="item">
+			<div class="icon">
+				<span class="fa fa-globe fa-4x wow bounceIn" data-wow-delay="0.1s"></span>
+			</div>
+			<header>
+				<h3><a href="#">Desarrollo Web</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorum excepturi molestias.</p>
+			</header>
+		</article>
+		<article class="item">
+			<div class="icon">
+				<span class="fa fa-cog fa-4x wow bounceIn" data-wow-delay="0.4s"></span>
+			</div>
+			<header>
+				<h3><a href="#">Programacion Personalizada</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, nemo unde aliquid? Error, veritati.</p>
+			</header>
+		</article>
+		<article class="item">
+			<div class="icon">
+				<span class="fa fa-picture-o fa-4x wow bounceIn" data-wow-delay="0.7s"></span>
+			</div>
+			<header>
+				<h3><a href="#">Diseño Gráfico</a></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quisquam, aperia.</p>
+			</header>
+		</article>
+	</div>
+</section>
+<section class="posts-wrap">    
+	<hgroup class="titulos-wrap">
+		<h2 class="titulo wow fadeIn" data-wow-delay="0.3s">Mis Últimos Posts</h2>
+		<h4 class="subtitulo wow bounceIn" data-wow-delay="0.6s">Lorem ipsum dolor sit amet</h4>
+	</hgroup>
+	<div class="container">
+		<figure class="post wow fadeInLeft" data-wow-delay="0.3s">
+			<img src="img/5.jpg" alt="Blog 1">
+			<figcaption>
+				<h3><a href="/mywebsite/post/">Lorem ipsum dolor sit amet.</a></h3>
+				<p class="date"><i class="fa fa-calendar-o"></i>05 Marzo, 2014</p>
+			</figcaption>
+		</figure>
+		<figure class="post wow fadeInLeft" data-wow-delay="0.6s">
+			<img src="img/1.jpg" alt="Blog 2">
+			<figcaption>
+				<h3>Lorem ipsum dolor sit amet!</h3>
+				<p class="date"><i class="fa fa-calendar-o"></i>05 Marzo, 2014</p>
+			</figcaption>
+		</figure>
+		<figure class="post wow fadeInLeft" data-wow-delay="0.9s">
+			<img src="img/7.jpg" alt="Blog 3">
+			<figcaption>
+				<h3><a href="/mywebsite/post/">Lorem ipsum dolor sit amet.</a></h3>
+				<p class="date"><i class="fa fa-calendar-o"></i>05 Marzo, 2014</p>
+			</figcaption>
+		</figure>
+		<figure class="post wow fadeInLeft" data-wow-delay="1.2s">
+			<img src="img/4.jpg" alt="Blog 4">
+			<figcaption>
+				<h3><a href="/mywebsite/post/">Lorem ipsum dolor sit amet.</a></h3>
+				<p class="date"><i class="fa fa-calendar-o"></i>05 Marzo, 2014</p>
+			</figcaption>
+		</figure>
+	</div>
+</section>
 </body>
+<script type="text/javascript" src="/mywebsite/js/wow.min.js"></script>
+<script>	
+  new WOW().init();    
+</script>
 </html>

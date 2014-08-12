@@ -77,8 +77,8 @@
         $pager = $("<ul class='" + namespace + "_tabs " + namespaceIdx + "_tabs' />"),
 
         // Styles for visible and hidden slides
-        visible = {"float": "left", "position": "relative", "opacity": 1, "zIndex": 2},
-        hidden = {"float": "none", "position": "absolute", "opacity": 0, "zIndex": 1},
+        visible = {"float": "left", "position": "relative", "opacity": 1, "visibility": "visible"},
+        hidden = {"float": "none", "position": "absolute", "opacity": 0, "visibility": "hidden"},
 
         // Detect transition support
         supportsTransitions = (function () {
@@ -149,6 +149,9 @@
       // Add ID's to each slide
       $slide.each(function (i) {
         this.id = slideClassPrefix + i;
+        var img = $('#'+this.id+' img').attr('src');
+        $('#'+this.id).css('background', 'url('+img+') no-repeat');
+        $('#'+this.id+' img').remove();
       });
 
       // Add max-width and classes
