@@ -123,3 +123,46 @@ a:hover{
 .posts-wrap .post .date .fa{
 	margin-right: 7px;
 }
+
+/* FOOTER */
+.contactme{
+	width: 1170px;
+	padding: 40px 15px;
+	margin: 0 auto;
+}
+.contactme .left{
+	float: left;
+	width: 80%;
+}
+.contactme .right{
+	float: right;
+	width: 20%;
+}
+.contactme .dotted{
+	color: #505961;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.btn{
+	background: #2fb677;
+	padding: .5em 1.1em;
+	border-radius: 4px;
+	color: white !important;
+	box-shadow: 0 -3px 0px rgba(0,0,0,.3) inset;
+}
+.footer{
+	padding: 15px;
+	margin: 0;
+	text-align: center;
+	background: #505961;
+	color: white;
+}
+.footer p{
+	margin: 0;
+}
+.footer a{
+	color: #7d8781;
+}
+.footer a:hover{
+	color: #2fb677;
+}
