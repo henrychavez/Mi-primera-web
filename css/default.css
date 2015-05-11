@@ -227,6 +227,111 @@ a:hover{
 	font-size:16px
 }
 
+/* Portafolio */
+#filter {
+	display: block;
+	margin: 20px auto 55px;
+	position: relative;
+	text-align:center;
+}
+
+#filter a{
+	display: inline-block;	
+	line-height: 30px;
+	padding: 5px 20px;
+	margin: 0 15px;
+	font-size: .9em;
+	text-transform: uppercase;
+	border: 2px solid rgba(2, 191, 119,1);
+}
+#filter a:hover, #filter a.active{
+	/*background: rgba(2, 191, 119,1) url('../img/white-pixel.png');*/
+	background: rgba(2, 191, 119,1);
+	color: white;
+}
+
+#portafolio{
+	display:block;
+	overflow:hidden;
+}
+#portafolio ul{
+	overflow:hidden;
+	padding: 0;
+}
+#portafolio ul.hidden{
+	display:none;
+}
+
+#portafolio li{
+	float: left;
+	list-style: none outside none;
+	margin: 10px;
+	position: relative;
+	width: 265px;
+	height: 177px;
+	overflow: hidden;
+}
+#portafolio li img{
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s	;
+}
+#portafolio li:hover img{
+	-webkit-transform: scale(1.5,1.5);
+	   -moz-transform: scale(1.5,1.5);
+	    -ms-transform: scale(1.5,1.5);
+	     -o-transform: scale(1.5,1.5);
+	        transform: scale(1.5,1.5);
+}
+#portafolio li .caption{
+	position: absolute;
+	top:0;
+	left: 0;
+	text-align: center;
+	background: rgba(0,0,0,.75) url('../img/white-pixel.png');
+	width: 100%;
+	height: 100%;
+	color: white;
+	opacity: 0;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s	;
+	-webkit-transform: scale(5.5,5.5);
+	   -moz-transform: scale(5.5,5.5);
+	    -ms-transform: scale(5.5,5.5);
+	     -o-transform: scale(5.5,5.5);
+	        transform: scale(5.5,5.5);
+}
+#portafolio li:hover .caption{
+	opacity: 1;
+	-webkit-transform: scale(1,1);
+	   -moz-transform: scale(1,1);
+	    -ms-transform: scale(1,1);
+	     -o-transform: scale(1,1);
+	        transform: scale(1,1);
+}
+#portafolio li .caption h3{
+	color: white;
+	background: rgba(2, 191, 119, .75) url('../img/white-pixel.png');
+	padding: 5px 10px;
+}
+#portafolio li .caption p{
+	margin: 0 auto 1.5em;
+	line-height: 1.2em;
+}
+#portafolio li .caption .redmore{
+	color: white;
+	border: 2px solid rgba(2, 191, 119, .75);
+	padding: 5px 10px;
+}
+#portafolio li .caption .redmore:hover{
+	background: rgba(2, 191, 119, .75) url('../img/white-pixel.png');
+}
+
 /*Paginacion*/
 .bg_white{
 	background:#fff url("../img/bg3.png");
